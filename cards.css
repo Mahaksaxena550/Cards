@@ -1,14 +1,20 @@
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px;/
+    /* box-sizing: border-box; */
+
 
 }
 
 .main{
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
-    background-color: hotpink;
+    /* background-image: url(bg.jpg); */
+    background-image: url(bg1.jpg);
+    /* background-image: url(bg2.jpg); */
 }
 /* .main:hover .cards{
      transform: perspective(20px) rotate(2deg) translateY(-50px);
@@ -16,17 +22,18 @@
 
 .cards{
     width: 20%;
+    height: 500px;
     background-color: rgb(250, 245, 245);
     border-radius: 18px;
     margin: 40px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 3px 3px 10px rgb(17, 225, 10);
    
     
     cursor: pointer;
 }
 
 .cards:hover{
-     box-shadow: 2px 2px 10px black;
+     box-shadow: 3px 3px 10px rgb(243, 240, 240);
      
      transform: perspective(20px) rotatex(2deg) translateY(-50px);
      /* transform: rotateY(180deg); */
@@ -58,6 +65,7 @@ button{
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 3px 3px 10px #0b0b0b;
 }
 
 button:hover{
@@ -65,4 +73,5 @@ button:hover{
     color: white;
     transition: .5s;
     cursor: pointer;
+     box-shadow: 3px 3px 10px #f61c0c;
 }
